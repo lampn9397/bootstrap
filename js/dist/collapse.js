@@ -203,6 +203,7 @@
   const CLASS_NAME_COLLAPSE = 'collapse';
   const CLASS_NAME_COLLAPSING = 'collapsing';
   const CLASS_NAME_COLLAPSED = 'collapsed';
+  const CLASS_NAME_DEEPER_CHILDREN = `:scope .${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`;
   const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
   const WIDTH = 'width';
   const HEIGHT = 'height';
@@ -272,7 +273,7 @@
       let activesData;
 
       if (this._config.parent) {
-        const children = SelectorEngine__default['default'].find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+        const children = SelectorEngine__default['default'].find(CLASS_NAME_DEEPER_CHILDREN, this._config.parent);
         actives = SelectorEngine__default['default'].find(SELECTOR_ACTIVES, this._config.parent).filter(elem => !children.includes(elem)); // remove children if greater depth
       }
 
@@ -410,7 +411,7 @@
         return;
       }
 
-      const children = SelectorEngine__default['default'].find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+      const children = SelectorEngine__default['default'].find(CLASS_NAME_DEEPER_CHILDREN, this._config.parent);
       SelectorEngine__default['default'].find(SELECTOR_DATA_TOGGLE, this._config.parent).filter(elem => !children.includes(elem)).forEach(element => {
         const selected = getElementFromSelector(element);
 

@@ -458,7 +458,7 @@
       };
 
       SelectorEngine__default['default'].find(SELECTOR_ITEM_IMG, this._element).forEach(itemImg => {
-        EventHandler__default['default'].on(itemImg, EVENT_DRAG_START, e => e.preventDefault());
+        EventHandler__default['default'].on(itemImg, EVENT_DRAG_START, event => event.preventDefault());
       });
 
       if (this._pointerEvent) {

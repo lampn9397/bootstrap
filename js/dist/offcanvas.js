@@ -355,7 +355,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.1.1): util/backdrop.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
   const Default$2 = {
@@ -479,7 +479,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.1.1): util/focustrap.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
   const Default$1 = {
@@ -608,7 +608,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.1.1): offcanvas.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
   /**
